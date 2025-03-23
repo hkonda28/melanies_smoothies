@@ -48,9 +48,9 @@ if time_to_insert:
    session.sql(my_insert_stmt).collect()    
    st.success('Your Smoothie is ordered! ✅')
 
-st.subheader("Pending Orders")
-pending_orders = session.table("smoothies.public.orders").filter(col("ORDER_FILLED") == False).collect()
-st.dataframe(pending_orders)
+#st.subheader("Pending Orders")
+#pending_orders = session.table("smoothies.public.orders").filter(col("ORDER_FILLED") == False).collect()
+#st.dataframe(pending_orders)
 
 import requests
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
