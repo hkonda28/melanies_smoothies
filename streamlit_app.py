@@ -46,7 +46,8 @@ time_to_insert=st.button('Submit Order')
 
 if time_to_insert:
    session.sql(my_insert_stmt).collect()    
-   st.success('✅ Your Smoothie is ordered,{name_on_order}!')
+   #st.success('✅ Your Smoothie is ordered,{name_on_order}!')
+   st.success(f'✅ Your Smoothie is ordered, {name_on_order}!')
 
 #st.subheader("Pending Orders")
 #pending_orders = session.table("smoothies.public.orders").filter(col("ORDER_FILLED") == False).collect()
