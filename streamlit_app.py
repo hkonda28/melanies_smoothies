@@ -45,6 +45,9 @@ my_insert_stmt = f"""INSERT INTO smoothies.public.orders (ingredients, name_on_o
            
 #st.write(my_insert_stmt)
 time_to_insert=st.button('Submit Order')
+import requests
+smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+st.text(smoothiefroot_response)
 #st.stop()
 
 if time_to_insert:
