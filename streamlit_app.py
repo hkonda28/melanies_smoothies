@@ -52,6 +52,6 @@ if time_to_insert:
 #pending_orders = session.table("smoothies.public.orders").filter(col("ORDER_FILLED") == False).collect()
 #st.dataframe(pending_orders)
 
-import requests
-smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-sf_df=st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+#import requests
+#smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+#sf_df=st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
